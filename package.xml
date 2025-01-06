@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>turtlebot3_scenario_execution</name>
+  <version>0.0.0</version>
+  <description>The turtlebot3_scenario_execution package</description>
+  <maintainer email="labiybafakh@gmail.com">Muhammad Labiyb Afakh</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+
+  </export>
+</package>

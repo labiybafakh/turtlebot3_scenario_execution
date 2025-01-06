@@ -1,0 +1,13 @@
+<launch>
+
+    <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_world.launch"/>    
+
+    <include file="$(find turtlebot3_navigation)/launch/turtlebot3_navigation.launch">
+
+        <arg name="map_file" value="$(find turtlebot3_scenario_execution)/maps/map.yaml" />
+        
+    </include>
+
+    <node pkg="rostopic" type="rostopic" name="publish_initial_pose" args="pub -1 /initialpose geometry_msgs/PoseWithCovarianceStamped '{header: {frame_id: map}, pose: {pose: {position: {x: -2.0, y: -0.5, z: 0.0}, orientation: {w: 1.0}}}}'" output="screen" />
+
+</launch>
