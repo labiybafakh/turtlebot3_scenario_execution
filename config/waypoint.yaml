@@ -1,0 +1,17 @@
+- name: test_movement
+  unit_moves:
+    - moving_type: rotate
+      direction: right # left / right
+      speed: 90.0 # [deg/s]
+      target:
+        angle: 90.0 # [deg]
+    - moving_type: straight
+      direction: forward # forward / backward
+      speed: 0.3 # [m/s]
+      target:
+        distance: 1.0 # [m]
+    - moving_type: rotate
+      direction: left # left / right
+      speed: 90.0 # [deg/s]
+      target:
+        angle: 90.0 # [deg]
